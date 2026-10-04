@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-card {
+    display: flex;
+    width: 80%;
+    height: 70%;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.contact-content {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-content h1 {
+    color: #0056b3;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.contact-content p {
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-details strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.send-email-btn {
+    display: inline-block;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.send-email-btn:hover {
+    background-color: #004494;
+}
+
+.contact-map {
+    flex: 1;
+    position: relative;
+    background: url('images/map.png') no-repeat center center;
+    background-size: cover;
+}
+
+.contact-social-icons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+}
+
+.contact-social-icons a {
+    margin-right: 10px;
+    color: #fff;
+    background-color: #0056b3;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-social-icons a:hover {
+    background-color: #004494;
+}
+
+.contact-social-icons a:last-child {
+    margin-right: 0;
+}
