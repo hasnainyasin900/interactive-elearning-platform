@@ -1,0 +1,205 @@
+<?php
+  session_start();
+ ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digital Media Marketing </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- links for the navbar that i've made  -->
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../styleloggedin.css">
+    <!-- End of the links for the navbar that i've made  -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../../../fonts/icomoon/style.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/jquery-ui.css">
+    <link rel="stylesheet" href="../../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../../css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="../../../fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="../../../css/aos.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar  js-sticky-header site-navbar-target" role="banner">
+      <div class="topnav" id="myTopnav">
+      <a href="../../../loggedin.php" class="active">Home</a>
+          <?php
+          if (isset($_SESSION['userId'])){
+            echo '<a href="../../../loggedin/profile.php" name="profile">Profile</a>
+                  <a href="../../../includes/logout.inc.php" name="logout-submit">SIGN OUT</a>';
+          }
+           ?>
+         </div>
+      </div>
+
+    </header>
+
+    <div class="intro-section single-cover" id="home-section">
+
+      <div class="slide-1 text-white" style="background-image: url('../../../images/course3.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="row justify-content-center align-items-center text-center">
+                <div class="col-lg-6">
+                  <h1 data-aos="fade-up" data-aos-delay="0" class="text-white"> Paid Advertising | Video Tutorial for Beginners</h1>
+                  <p data-aos="fade-up" data-aos-delay="100" class="text-white">8 Lessons / 5 Week &bullet; 1200 students &bullet; <a href="#" class="text-white">2 comments</a></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mb-5">
+
+            <div class="mb-5">
+              <h3 class="text-black">Course Description</h3>
+              <p>Paid advertising is a route that is traditional marketing. What makes it digital marketing is its placements on websites, search engines and social media platforms. Think about some of the ads you have seen as you have scrolled on social media or browsed the internet. This is exactly the job of the paid digital advertiser.
+
+In paid digital advertising, there are many skills that one needs. Creativity and strategic thinking are musts, and you must be quick on your feet to respond to changing algorithms and guidelines. Additionally, knowledge of media buying and placements is helpful for these roles.
+
+Paid advertisers also must be team players and able to collaborate and communicate. Digital advertising often supports other marketing communications functions, so you must be able to work across teams and disciplines. In an integrated campaign, digital paid advertising serves to amplify a message that a company is already sharing using practices like social media marketing, influencer marketing and content marketing.</p>
+            </div>
+
+            <div class="pt-5">
+              <h3 class="mb-5">2 Comments</h3>
+              <ul class="comment-list">
+
+                <li class="comment">
+
+                  <div class="vcard bio">
+                    <img src="../../../images/comment3.jpg" alt="Image placeholder">
+                  </div>
+
+                  <div class="comment-body">
+                    <h3>Aisha Naski</h3>
+                    <div class="meta">July 12, 2020 at 3:00pm</div>
+                    <p>Good content thank you !</p>
+                  </div>
+                </li>
+
+                <li class="comment">
+
+                  <div class="vcard bio">
+                    <img src="../../../images/comment1.jpg" alt="Image placeholder">
+                  </div>
+
+                  <div class="comment-body">
+                    <h3>Abbass Nouri</h3>
+                    <div class="meta">August 19, 2020 at 5:40am</div>
+                    <p>I recently completed a digital media marketing course on Digital Media Marketing, and I couldn't be happier with my experience. The content was comprehensive, well-structured, and up-to-date with the latest industry trends. The instructors were knowledgeable and engaging, making complex concepts easy to understand. I particularly appreciated the practical assignments and real-world examples, which helped me apply what I learned immediately. The support team was also incredibly responsive and helpful whenever I had questions. Overall, Digital Media Marketing provided me with valuable skills and insights that have significantly boosted my confidence and expertise in digital marketing. Highly recommended!</p>
+                  </div>
+
+                </li>
+              </ul>
+              <!-- END comment-list -->
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 pl-lg-5">
+            <div class="mb-5 text-center border rounded course-instructor">
+              <h3 class="mb-5 text-black text-uppercase h6 border-bottom pb-3">Course Instructor</h3>
+              <div class="mb-4 text-center">
+                <img src="../../../images/cp1.jpg" alt="Image" class="w-25 rounded-circle mb-4">
+                <h3 class="h5 text-black mb-4">Hasain Yasin</h3>
+                <p>
+                Hello, I'm Hasnain Yasin, a highly skilled and experienced freelancer with a diverse range of expertise.
+                 With over 6 years of professional experience as Digital Marketing Expert, 
+                I have honed my skills in various areas to deliver exceptional results.
+                  Work with more then 1000 Clint's with 6 years of experience, taught over 500 students..</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About Digital Media Marketing</h3>
+            <p>An E-Learning platform rich of resources, We make learning easy and simple for Everyone.</p>
+          </div>
+
+          <div class="col-md-4">
+            <h3>Subscribe</h3>
+            <p>Keep yourself up to date and receive all kind of news about Digital Media Marketing.</p>
+            <form action="https://mailchi.mp/064deb47eeaa/lacdemy" target="_blank" class="footer-subscribe">
+              <div class="d-flex mb-5">
+
+                <input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+            <p>
+        
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights are reserved
+       
+      </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+
+
+  </div> <!-- .site-wrap -->
+
+  <script src="../../../js/jquery-3.3.1.min.js"></script>
+  <script src="../../../js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../../../js/jquery-ui.js"></script>
+  <script src="../../../js/popper.min.js"></script>
+  <script src="../../../js/bootstrap.min.js"></script>
+  <script src="../../../js/owl.carousel.min.js"></script>
+  <script src="../../../js/jquery.stellar.min.js"></script>
+  <script src="../../../js/jquery.countdown.min.js"></script>
+  <script src="../../../js/bootstrap-datepicker.min.js"></script>
+  <script src="../../../js/jquery.easing.1.3.js"></script>
+  <script src="../../../js/aos.js"></script>
+  <script src="../../../js/jquery.fancybox.min.js"></script>
+  <script src="../../../js/jquery.sticky.js"></script>
+
+
+  <script src="../../../js/main.js"></script>
+
+  </body>
+</html>
